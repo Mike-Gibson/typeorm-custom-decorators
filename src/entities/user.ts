@@ -1,18 +1,16 @@
 import {Entity, PrimaryGeneratedColumn, Column} from "typeorm";
+import { CreatedBy } from "../subscribers/test";
 
 @Entity()
 export class User {
 
     @PrimaryGeneratedColumn()
-    id: number = 0;
+    id!: number;
 
     @Column()
-    firstName: string = "";
+    name!: string;
 
-    @Column()
-    lastName: string = "";
-
-    @Column()
-    age: number = 0;
+    @CreatedBy()
+    createdBy!: string;
 
 }
