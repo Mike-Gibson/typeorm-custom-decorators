@@ -1,0 +1,23 @@
+{
+   "name": "typeorm-subscribers",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "tsc",
+      "start": "ts-node src/index.ts"
+   },
+   "author": "",
+   "license": "MIT",
+   "dependencies": {
+      "pg": "^7.8.0",
+      "reflect-metadata": "^0.1.13",
+      "typeorm": "0.2.11"
+   },
+   "devDependencies": {
+      "@types/node": "^10.12.18",
+      "typescript": "^3.2.2",
+      "ts-node": "3.3.0"
+   }
+}
